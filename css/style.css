@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.flexContainer {
+    border: 4px blue;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.research {
+    width: 33%;
+    margin: 4px;
+    padding: 10px;
+ 
+}
+.design {
+    width: 33%;
+    margin: 4px;
+    padding: 10px;
+   
+}
+.development {
+    width: 33%;
+    margin: 4px;
+    padding: 10px;
+    
+}
+.tools {
+    width: 33%;
+    margin: 4px;
+    padding: 10px;
+   
+}
+h3 {
+    text-align: center;
+    color: black;
+    padding: 30px;
+}
+.workGrid {
+    display: grid;
+    row-gap: 25px;
+    flex-direction: row;
+    margin: 0px 5%; 
+}
+
+.gov {
+    display: inline-flex;
+    flex-direction: row;
+    grid-template-columns: 150px 75%;
+}
+.pets {
+    display: inline-flex;
+}
+.tow {
+    display: inline-flex;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+ @media only screen and (max-width: 600){
+    .flexContainer {
+        display: column;
+        width: 100%;
+        grid-template-areas: 
+        "research"
+        "design"
+        "development";
+  
+    }
+
+ }
